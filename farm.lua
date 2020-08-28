@@ -23,13 +23,13 @@ for i = 0, 7, 1 do
     end
 
     if i % 2 == 0 then
-        turtle.turnLeft();
+        turtle.turnRight();
         turtle.forward();
-        turtle.turnLeft();
+        turtle.turnRight();
     else
-        turtle.turnRight();
+        turtle.turnLeft();
         turtle.forward();
-        turtle.turnRight();
+        turtle.turnLeft();
     end
 end
 
