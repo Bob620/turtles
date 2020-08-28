@@ -50,6 +50,10 @@ for j = 0, 7, 1 do
     farmBlockBelow();
 end
 
+turtle.forward();
+turtle.turnLeft();
+turtle.turnLeft();
+
 --for i = 0, 8, 1 do
 --    turtle.back();
 --end
