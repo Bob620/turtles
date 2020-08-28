@@ -33,6 +33,23 @@ for i = 0, 7, 1 do
     end
 end
 
+farmBlockBelow();
+for j = 0, 7, 1 do
+    turtle.forward();
+    farmBlockBelow();
+end
+
+turtle.turnLeft();
+for j = 0, 7, 1 do
+    turtle.forward();
+    farmBlockBelow();
+end
+turtle.turnLeft();
+for j = 0, 7, 1 do
+    turtle.forward();
+    farmBlockBelow();
+end
+
 --for i = 0, 8, 1 do
 --    turtle.back();
 --end
