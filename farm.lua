@@ -13,19 +13,26 @@ function farmBlockBelow()
 end
 
 turtle.select(2);
+turtle.forward();
 
-for i = 0, 8, 1 do
-    for i = 0, 8, 1 do
+for i = 0, 7, 1 do
+    farmBlockBelow();
+    for j = 0, 7, 1 do
         turtle.forward();
         farmBlockBelow();
     end
 
-    turtle.turnRight();
-    turtle.forward();
-    turtle.turnRight();
-    farmBlockBelow();
+    if i % 2 == 0 then
+        turtle.turnLeft();
+        turtle.forward();
+        turtle.turnLeft();
+    else
+        turtle.turnRight();
+        turtle.forward();
+        turtle.turnRight();
+    end
 end
 
-for i = 0, 8, 1 do
-    turtle.back();
-end
+--for i = 0, 8, 1 do
+--    turtle.back();
+--end
