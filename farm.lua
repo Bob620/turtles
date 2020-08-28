@@ -1,17 +1,20 @@
-select(2);
+turtle.select(2);
 
-turtle.forward();
-turtle.forward();
-exists, data = turtle.inspectDown();
+for i = 0, 9, 1 do
+    turtle.forward();
+    exists, data = turtle.inspectDown();
 
-if exists then
-    if data["state"]["age"] == 3 then
+    if exists then
+        if data["state"]["age"] == 3 then
+            turtle.digDown();
+            turtle.placeDown();
+        end
+    else
         turtle.digDown();
---        turtle.placeDown();
+        turtle.placeDown();
     end
-else
-    turtle.digDown();
-    turtle.placeDown();
 end
 
-turtle.back();
+for i = 0, 9, 1 do
+    turtle.back();
+end
