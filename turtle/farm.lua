@@ -59,8 +59,7 @@ end
 local continueFarm = true;
 while continueFarm do
     farmPlot();
-    local id = os.startTimer(60);
-    os.pullEvent();
+    sleep(120);
     settings.load();
     continueFarm = settings.get("farm", true);
 end
