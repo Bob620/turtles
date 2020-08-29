@@ -60,7 +60,7 @@ local continueFarm = true;
 while continueFarm do
     os.run({}, "./fuel.lua");
     farmPlot();
-    sleep(120);
+    sleep(300);
     settings.load();
     continueFarm = settings.get("farm", true);
 end
