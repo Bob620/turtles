@@ -6,13 +6,13 @@ turtle.select(1);
 
 local maxFuel = turtle.getFuelLimit();
 local fuel = turtle.getFuelLevel();
-local fuelPercent = (fuel / maxFuel) * 100;
+local fuelPercent = fuel / maxFuel;
 if fuelPercent < 80 then
     turtle.refuel();
 end
 
 fuel = turtle.getFuelLevel();
-fuelPercent = (fuel / maxFuel) * 100;
+fuelPercent = fuel / maxFuel;
 
 local termWidth, termHight = term.getSize();
 
