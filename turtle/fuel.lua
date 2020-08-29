@@ -35,7 +35,7 @@ turtle.select(1);
 local maxFuel = turtle.getFuelLimit();
 local fuel = turtle.getFuelLevel();
 local fuelPercent = fuel / maxFuel;
-updateFuelScreen();
+updateFuelScreen(fuelPercent);
 
 if fuelPercent < .40 then
     while fuelPercent < .80 do
@@ -47,4 +47,4 @@ if fuelPercent < .40 then
     end
 end
 
-updateFuelScreen();
+updateFuelScreen(fuelPercent);
