@@ -58,6 +58,7 @@ end
 
 local continueFarm = true;
 while continueFarm do
+    os.run(nil, "./fuel.lua");
     farmPlot();
     sleep(120);
     settings.load();
