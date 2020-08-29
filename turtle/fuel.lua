@@ -4,6 +4,7 @@
 
 function updateFuelScreen(fuelPercent)
     local termWidth, termHight = term.getSize();
+    term.setBackgroundColor(colors.black);
     term.clear();
 
     paintutils.drawPixel(termWidth - 1, 1, colors.white);
@@ -28,6 +29,7 @@ function updateFuelScreen(fuelPercent)
     paintutils.drawPixel(termWidth, termHight, colors.white);
 
     term.setCursorPos(1, 1);
+    term.setBackgroundColor(colors.black);
 end
 
 turtle.select(1);
